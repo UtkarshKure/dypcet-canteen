@@ -1,0 +1,226 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background: url('https://wallpaperaccess.com/full/3692629.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar #logo img {
+    width: 150px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar ul li.item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#navbar ul li.item a:hover {
+    color: #ff9900;
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 3em;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.h-secondary {
+    font-size: 2.5em;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+/* Menu Section */
+#menu .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    color: #ddd;
+}
+
+.menu-item button {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover {
+    background-color: #e68a00;
+}
+
+/* Cart Section */
+#cart {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#cart h2 {
+    font-size: 2em;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+#cart-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#cart-list li {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#total-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+#cart button {
+    background-color: #ff9900;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cart button:hover {
+    background-color: #e68a00;
+}
+
+/* Payment Section */
+#payment {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: none;
+}
+
+#payment h2 {
+    font-size: 2.5em;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+#payment p {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#payment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#payment label {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#payment input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+#payment button {
+    background-color: #ff9900;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#payment button:hover {
+    background-color: #e68a00;
+}

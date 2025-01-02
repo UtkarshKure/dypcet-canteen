@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYPCET Canteen Online Food Ordering Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://coek.dypgroup.edu.in/wp-content/uploads/2017/06/Group-.png" alt="DYPCET Logo">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to DYPCET Canteen Online Food Services</h1>
+        <p>"Fuel your day at Campus Bites, where every meal is made to energize and satisfy. Enjoy fresh, delicious, and affordable food, crafted just for students like you!"</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2 class="h-secondary">Our Menu</h2>
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="https://purepng.com/public/uploads/large/tea-in-a-white-cup-e9k.png" alt="Item 3">
+                <h3>Tea</h3>
+                <p><strong>₹10</strong></p>
+                <button onclick="addToCart('Tea', 10)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://png.pngtree.com/png-clipart/20230425/original/pngtree-americano-coffee-beans-transparent-white-background-png-image_9097377.png" alt="Item 3">
+                <h3>Hot Coffe</h3>
+                <p><strong>₹20</strong></p>
+                <button onclick="addToCart('Hot Coffe', 20)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://png.pngtree.com/png-clipart/20240410/ourmid/pngtree-breakfast-dish-poha-png-image_12274302.png" alt="Item 3">
+                <h3>Poha</h3>
+                <p><strong>₹20</strong></p>
+                <button onclick="addToCart('Poha', 20)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/024/106/549/large_2x/tasty-crispy-samosa-on-transparent-background-png.png" alt="Item 3">
+                <h3>Samosa</h3>
+                <p><strong>₹20</strong></p>
+                <button onclick="addToCart('Samosa', 20)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://png.pngtree.com/png-vector/20240330/ourmid/pngtree-daal-kachori-with-aloo-ki-tarkari-recipe-png-image_12208136.png" alt="Item 3">
+                <h3>Kachori</h3>
+                <p><strong>₹20</strong></p>
+                <button onclick="addToCart('Kachori', 20)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="http://www.pngmart.com/files/16/Bacon-Cheese-Burger-PNG-File.png" alt="Item 2">
+                <h3>Burger</h3>
+                <p><strong>₹49</strong></p>
+                <button onclick="addToCart('Burger', 49)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/344/437/original/pasta-isolated-on-a-transparent-background-png.png" alt="Item 3">
+                <h3>Pasta</h3>
+                <p><strong>₹89</strong></p>
+                <button onclick="addToCart('Pasta', 89)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://png.pngtree.com/png-clipart/20230430/original/pngtree-sandwich-bread-ham-transparent-png-image_9125684.png" alt="Item 4">
+                <h3>Sandwich</h3>
+                <p><strong>₹49</strong></p>
+                <button onclick="addToCart('Sandwich', 49)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://www.pngmart.com/files/17/Crunchy-Fries-Transparent-Background.png" alt="Item 5">
+                <h3>Fries</h3>
+                <p><strong>₹59</strong></p>
+                <button onclick="addToCart('Fries', 59 )">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/311/731/non_2x/pizza-transparent-background-png.png" alt="Item 1">
+                <h3>Pizza</h3>
+                <p><strong>₹179</strong></p>
+                <button onclick="addToCart('Pizza', 179)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://png.pngtree.com/png-clipart/20230313/original/pngtree-fresh-steam-momos-png-image_8987007.png" alt="Item 3">
+                <h3>Momos</h3>
+                <p><strong>₹99</strong></p>
+                <button onclick="addToCart('Momos', 99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/025/222/175/non_2x/chicken-nuggets-isolated-on-transparent-background-png.png" alt="Item 3">
+                <h3>Nuggets</h3>
+                <p><strong>₹79</strong></p>
+                <button onclick="addToCart('Nuggets', 79)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-iced-coffee-png-png-image_13381334.png" alt="Item 3">
+                <h3>Cold Coffe</h3>
+                <p><strong>₹45</strong></p>
+                <button onclick="addToCart('Cold Coffe', 45 )">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://png.pngtree.com/png-vector/20240723/ourmid/pngtree-thali-isolated-on-transparent-background-png-image_13106499.png" alt="Item 3">
+                <h3>Veg Thali</h3>
+                <p><strong>₹80</strong></p>
+                <button onclick="addToCart('Veg Thali', 80)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.pngmart.com/files/22/Non-Veg-PNG-Isolated-Photo.png" alt="Item 3">
+                <h3>Non-Veg Thali</h3>
+                <p><strong>₹100</strong></p>
+                <button onclick="addToCart('Non-Veg Thali', 100)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-list"></ul>
+        <p id="total-price">Total: ₹0</p>
+        <button onclick="proceedToPayment()">Proceed to Payment</button>
+    </section>
+
+    <!-- Payment Section -->
+   <!-- Payment Section -->
+   <section id="payment" style="display: none;">
+    <h2>Payment</h2>
+    <p>Total Amount: ₹<span id="payment-total"></span></p>
+    <form id="payment-form">
+        <label for="upi">Enter UPI ID:</label>
+        <input type="text" id="upi" name="upi" placeholder="example@upi" required>
+        <button type="submit">Pay Now</button>
+    </form>
+</section>
+
+<!-- Payment Success Section -->
+<section id="payment-success" style="display: none;">
+    <h2>Payment Successful!</h2>
+    <p>Your payment was completed successfully. Thank you for ordering!</p>
+</section>
+
+<script>
+    let cart = [];
+    let totalAmount = 0;
+
+    // Function to add items to the cart
+    function addToCart(item, price) {
+        cart.push({ item, price });
+        totalAmount += price;
+        updateCart();
+    }
+
+    // Update the cart display
+    function updateCart() {
+        const cartList = document.getElementById('cart-list');
+        const totalPrice = document.getElementById('total-price');
+
+        // Clear previous cart items
+        cartList.innerHTML = '';
+
+        // Add new cart items
+        cart.forEach((cartItem) => {
+            const li = document.createElement('li');
+            li.textContent = `${cartItem.item} - ₹${cartItem.price}`;
+            cartList.appendChild(li);
+        });
+
+        // Update total price
+        totalPrice.textContent = `Total: ₹${totalAmount}`;
+    }
+
+    // Proceed to payment
+    function proceedToPayment() {
+        const paymentSection = document.getElementById('payment');
+        const paymentTotal = document.getElementById('payment-total');
+
+        // Set the total amount for payment
+        paymentTotal.textContent = totalAmount;
+
+        // Show the payment section
+        paymentSection.style.display = 'block';
+
+        // Hide the cart section
+        document.getElementById('cart').style.display = 'none';
+    }
+
+    // Handle payment form submission
+    document.getElementById('payment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Simulate successful payment (this can be replaced with actual payment logic)
+        const paymentSuccessSection = document.getElementById('payment-success');
+        paymentSuccessSection.style.display = 'block';
+
+        // Hide the payment section after successful payment
+        document.getElementById('payment').style.display = 'none';
+    });
+</script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
